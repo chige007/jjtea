@@ -9,4 +9,8 @@ $(function(){
         var fn = this.className.split(' ')[1];
         bannerSliderObj[fn]();
     });
+
+    $(window).on('resize', function(){
+        $('#page_index .banner').css('width', document.body.clientWidth + 'px');
+    });
 });

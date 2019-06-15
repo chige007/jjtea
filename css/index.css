@@ -22,7 +22,7 @@ body {
 }
 body {
   overflow: auto;
-  background-color: #feffff;
+  background-color: #fff;
 }
 a,
 span,
@@ -376,8 +376,7 @@ textarea:-ms-input-placeholder {
   vertical-align: middle;
 }
 .header .container .logo a img {
-  width: 175px;
-  height: 175px;
+  height: 190px;
 }
 .header .container .topMenus {
   width: 100%;
@@ -528,7 +527,6 @@ textarea:-ms-input-placeholder {
 }
 .activityNews {
   padding: 20px 0px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 .activityNews .newsList ul:before,
 .activityNews .newsList ul:after {
@@ -589,6 +587,36 @@ textarea:-ms-input-placeholder {
 .activityNews .newsList ul li .otherInfo .tapTimes {
   border-left: 1px solid #e7e7e7;
 }
+.footerMenus {
+  height: 68px;
+  background-color: #454545;
+}
+.footerMenus ul:before,
+.footerMenus ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footerMenus ul li {
+  width: 16.66%;
+  float: left;
+  height: 100%;
+  padding: 14px 10px;
+}
+.footerMenus ul li p {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+.footerMenus ul li p.text_en {
+  font-size: 12px;
+  margin-top: 4px;
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
 .title {
   text-align: center;
   margin: 10px 0px 30px 0px;
@@ -598,11 +626,6 @@ textarea:-ms-input-placeholder {
 }
 .title .text p.en {
   font-size: 12px;
-  transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -webkit-transform: scale(0.8);
-  -o-transform: scale(0.8);
 }
 .title .line {
   position: absolute;
