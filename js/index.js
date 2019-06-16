@@ -10,7 +10,7 @@ $(function(){
         bannerSliderObj[fn]();
     });
 
-    $(window).on('resize', function(){
-        $('#page_index .banner').css('width', document.body.clientWidth + 'px');
-    });
+    // $(window).on('resize', function(){
+    //     $('#page_index .banner').css('width', document.body.clientWidth + 'px');
+    // });
 });

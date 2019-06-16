@@ -1,1 +1,214 @@
 @import './util.less';
+
+.container{
+    width: 90%;
+    max-width: 1400px;
+    min-width: 1024px;
+    margin: 0px auto;
+}
+.header{
+    .container{
+        .clear;
+        height: 215px;
+        padding-left: 140px;
+        .logo{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            height: 170px;
+            vertical-align: middle;
+            a{
+                img{
+                    height: 170px;
+                }
+            }
+        }
+        .topMenus{
+            width: 100%;
+            ul{
+                margin-top: 80px;
+                width: 100%;
+                .clear;
+                li{
+                    padding: 5px 0px;
+                    width: 20%;
+                    text-align: center;
+                    float: left;
+                    border-left: 1px solid #999;
+                    &:first-child{
+                        border-left: none;
+                    }
+                    p{
+                        font-size: 18px;
+                        color: #222;
+                        white-space: nowrap;
+                        .animation(.3s);
+                        &.text_en{
+                            font-size: 12px;
+                            margin-top: 5px;
+                            color: #999;
+                            .transform(scale(0.9));
+                        }
+                    }
+                    &:hover{
+                        p{
+                            color: @theme;
+                            letter-spacing: 1px;
+                            .transform(translateY(-3px));
+                            &.text_en{
+                                letter-spacing: 0px;
+                                .transform(scale(0.9) translateY(-3px));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.banner{
+    min-width: 1024px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    &:hover{
+        .arrow{
+            .opacity(1);
+        }
+    }
+    ul{
+        li{
+            float: left;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .arrow{
+        position: absolute; 
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        .animation(.3s);
+        .opacity(0);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        &.prev{
+            left: 30px;
+        }
+        &.next{
+            right: 30px;
+        }
+    }
+    .dots{ 
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        bottom: 0px;
+        padding: 0px;
+        li{
+            display: inline-block; 
+            width: 12px; 
+            height: 12px; 
+            margin: 0 4px; 
+            text-indent: -999em; 
+            border: 2px solid @theme; 
+            border-radius: 20px; 
+            cursor: pointer; 
+            opacity: .4; 
+            -webkit-transition: background .5s, opacity .5s; 
+            -moz-transition: background .5s, opacity .5s; 
+            transition: background .5s, opacity .5s;
+            &.active{
+                background: @theme;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.footerMenus{
+    height: 68px;
+    background-color: #232323;
+    ul{
+        .clear;
+        li{
+            width: 16.66%;
+            float: left;
+            height: 100%;
+            padding: 14px 10px;
+            p{
+                font-size: 15px;
+                color: #fff;
+                text-align: center;
+                .animation(.3s);
+                &.text_en{
+                    font-size: 12px;
+                    margin-top: 4px;
+                    .transform(scale(0.8));
+                }
+            }
+            &:hover{
+                p{
+                    color: @theme;
+                }
+            }
+        }
+    }
+}
+.footer{
+    .container{
+        padding: 15px;
+        .logo{
+            display: inline-block;
+            vertical-align: top;
+            height: 150px;
+        }
+        .contactInfo{
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            padding-top: 50px;
+            >div{
+                margin-bottom: 10px;
+                span{
+                    color: #666;
+                    font-size: 13px;
+                    padding: 0px 10px;
+                    min-width: 190px;
+                    display: inline-block;
+                }
+            }
+        }
+        .qrcode{
+            float: right;
+            margin: 15px 5px;
+            border: 1px solid #ddd;
+            padding: 6px;
+            height: 140px;
+            span{
+                display: inline-block;
+                vertical-align: top;
+                height: 100%;
+                border-right: 1px solid #ddd;
+                width: 18px;
+                font-size: 12px;
+                color: #999;
+                line-height: 24px;
+                padding-top: 4px;
+            }
+            img{
+                height: 100%;
+            }
+            &.mobile{
+                span{
+                    padding-top: 16px;
+                }
+            }
+        }
+    }
+}
