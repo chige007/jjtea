@@ -20,6 +20,10 @@ $(function(){
     });
 
     $('.tab').find('li').on('click', function(){
-
+        $(this).addClass('active').siblings('li').removeClass('active');
+        var index = $(this).index();
+        var tabBody = $(this).closest('.tab').siblings('.tabBody');
+        $(tabBody).find('.active').eq(0).removeClass('active');
+        $(tabBody).find('li').eq(index).addClass('active');
     });
 });

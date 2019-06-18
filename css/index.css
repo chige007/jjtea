@@ -159,6 +159,10 @@ textarea:-ms-input-placeholder {
   -webkit-transform: scale(0.9);
   -o-transform: scale(0.9);
 }
+.header .container .topMenus ul li.active p {
+  color: #cca755;
+  letter-spacing: 1px;
+}
 .header .container .topMenus ul li:hover p {
   color: #cca755;
   letter-spacing: 1px;
@@ -245,6 +249,42 @@ textarea:-ms-input-placeholder {
 .banner .dots li.active {
   background: #cca755;
   opacity: 1;
+}
+.banner_static {
+  overflow: hidden;
+}
+.banner_static a img {
+  float: left;
+  width: 100%;
+}
+.tab {
+  background-color: #fff;
+}
+.tab ul {
+  overflow: hidden;
+}
+.tab ul li {
+  float: left;
+}
+.tab ul li a {
+  display: inline-block;
+  padding: 15px 40px;
+  color: #222;
+  font-size: 16px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+.tab ul li.active {
+  background-color: #cca755;
+}
+.tab ul li.active a {
+  color: #fff;
+}
+.tab ul li:hover a {
+  color: #cca755;
 }
 .footerMenus {
   height: 68px;
@@ -607,38 +647,15 @@ textarea:-ms-input-placeholder {
 }
 .specialProduct .projectList ul li {
   width: 31%;
+  padding-bottom: 46.4%;
   margin: 0px 1.16%;
-  height: 530px;
   float: left;
   overflow: hidden;
 }
-@media screen and (max-width: 1400px) {
-  .specialProduct .projectList ul li {
-    height: 510px;
-  }
-}
-@media screen and (max-width: 1300px) {
-  .specialProduct .projectList ul li {
-    height: 495px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .specialProduct .projectList ul li {
-    height: 485px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .specialProduct .projectList ul li {
-    height: 470px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .specialProduct .projectList ul li {
-    height: 460px;
-  }
-}
 .specialProduct .projectList ul li a {
-  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   height: 100%;
   width: 100%;
 }
@@ -661,9 +678,10 @@ textarea:-ms-input-placeholder {
   letter-spacing: 2px;
 }
 .specialProduct .projectList ul li a img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
   width: 100%;
-  margin-left: 0%;
-  z-index: 1;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -691,7 +709,7 @@ textarea:-ms-input-placeholder {
 }
 .specialProduct .projectList ul li a:hover img {
   width: 106%;
-  margin-left: -3%;
+  left: -3%;
 }
 .activityNews {
   padding: 20px 0px;

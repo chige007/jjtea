@@ -158,6 +158,13 @@
   background: #cca755;
   opacity: 1;
 }
+.banner_static {
+  overflow: hidden;
+}
+.banner_static a img {
+  float: left;
+  width: 100%;
+}
 .tab {
   background-color: #fff;
 }
@@ -184,8 +191,17 @@
 .tab ul li.active a {
   color: #fff;
 }
+.tab ul li.active:hover a {
+  color: #fff;
+}
 .tab ul li:hover a {
   color: #cca755;
+}
+.tabBody ul li {
+  display: none;
+}
+.tabBody ul li.active {
+  display: block;
 }
 .footerMenus {
   height: 68px;

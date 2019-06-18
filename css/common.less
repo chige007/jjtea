@@ -136,6 +136,15 @@
         }
     }
 }
+.banner_static{
+    overflow: hidden;
+    a{
+        img{
+            float: left;
+            width: 100%;
+        }
+    }
+}
 .tab{
     background-color: #fff;
     ul{
@@ -154,11 +163,26 @@
                 a{
                     color: #fff;
                 }
+                &:hover{
+                    a{
+                        color: #fff;
+                    }
+                }
             }
             &:hover{
                 a{
                     color: @theme;
                 }
+            }
+        }
+    }
+}
+.tabBody{
+    ul{
+        li{
+            display: none;
+            &.active{
+                display: block;
             }
         }
     }
