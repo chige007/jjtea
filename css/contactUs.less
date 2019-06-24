@@ -1,0 +1,68 @@
+@import './util.less';
+@import './init.less';
+@import './common.less';
+
+.contactInfo{
+    font-size: 16px;
+    color: #444;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+#joinUsForm{
+    width: 500px;
+    margin: 0px auto;
+    text-align: center;
+    .formGroup{
+        margin: 10px 0px;
+        label{
+            font-size: 15px;
+            color: #444;
+            letter-spacing: 1px;
+            line-height: 50px;
+        }
+        input{
+            height: 35px;
+            border: none;
+            border-bottom: 1px solid #999;
+            width: 350px;
+            font-size: 15px;
+            padding: 0px 6px;
+            .animation();
+            &:focus{
+                border-color: @theme;
+            }
+        }
+    }
+    button{
+        height: 45px;
+        width: 380px;
+        background-color: @theme;
+        margin: 20px auto;
+        border: none;
+        font-size: 15px;
+        color: #fff;
+        .radius(2px);
+        .animation();
+        &:hover{
+            cursor: pointer;
+            background-color: darken(@theme, 10%);
+        }
+    }
+}
+#contactUsImg{
+    float: left;
+    height: 190px;
+    margin-right: 40px;
+}
+#joinUsImg{
+    margin: 30px auto -40px auto;
+    display: block;
+}
+#map{
+    margin-top: 20px;
+    height: 500px;
+    width: 100%;
+}
+.footerMenus{
+    margin-top: 0px;
+}

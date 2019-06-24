@@ -283,8 +283,23 @@ textarea:-ms-input-placeholder {
 .tab ul li.active a {
   color: #fff;
 }
+.tab ul li.active:hover a {
+  color: #fff;
+}
 .tab ul li:hover a {
   color: #cca755;
+}
+.tabBody {
+  background-color: #f4f7f9;
+}
+.tabBody ul li {
+  display: none;
+}
+.tabBody ul li.active {
+  display: block;
+}
+.tabBody ul li .tabBodyPanel {
+  padding: 40px 20px;
 }
 .footerMenus {
   height: 68px;
@@ -323,6 +338,9 @@ textarea:-ms-input-placeholder {
 }
 .footerMenus ul li:hover p {
   color: #cca755;
+}
+.footer {
+  margin-top: 20px;
 }
 .footer .container {
   padding: 15px;
@@ -669,6 +687,11 @@ textarea:-ms-input-placeholder {
   text-align: center;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
 }
 .specialProduct .projectList ul li a .name p,
 .specialProduct .projectList ul li a .discripe p {
@@ -693,19 +716,18 @@ textarea:-ms-input-placeholder {
   bottom: -100%;
   text-align: left;
   padding: 15px;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -ms-transition: all 0.4s;
 }
 .specialProduct .projectList ul li a .discripe p {
   font-size: 14px;
   line-height: 26px;
   text-indent: 2em;
 }
+.specialProduct .projectList ul li a:hover .name {
+  background-color: #cca755;
+}
 .specialProduct .projectList ul li a:hover .discripe {
   bottom: 0%;
+  background-color: rgba(189, 140, 71, 0.8);
 }
 .specialProduct .projectList ul li a:hover img {
   width: 106%;
@@ -713,6 +735,7 @@ textarea:-ms-input-placeholder {
 }
 .activityNews {
   padding: 20px 0px;
+  margin-bottom: 30px;
 }
 .activityNews .newsList ul:before,
 .activityNews .newsList ul:after {
@@ -772,12 +795,13 @@ textarea:-ms-input-placeholder {
   color: #999;
 }
 .activityNews .newsList ul li:hover {
-  background-color: #f7f9fb;
-  box-shadow: 0px 1px 4px #ccc;
-  -webkit-box-shadow: 0px 1px 4px #ccc;
-  -moz-box-shadow: 0px 1px 4px #ccc;
-  -ms-box-shadow: 0px 1px 4px #ccc;
-  -o-box-shadow: 0px 1px 4px #ccc;
+  background-color: #fbf8f2;
+  border: 1px solid #cca755;
+  box-shadow: 0px 1px 4px #efe4cb;
+  -webkit-box-shadow: 0px 1px 4px #efe4cb;
+  -moz-box-shadow: 0px 1px 4px #efe4cb;
+  -ms-box-shadow: 0px 1px 4px #efe4cb;
+  -o-box-shadow: 0px 1px 4px #efe4cb;
   transform: translateY(-3px);
   -ms-transform: translateY(-3px);
   -moz-transform: translateY(-3px);
@@ -785,7 +809,7 @@ textarea:-ms-input-placeholder {
   -o-transform: translateY(-3px);
 }
 .activityNews .newsList ul li:hover p.title {
-  color: #cca755;
+  color: #000;
 }
 .activityNews .newsList ul li:hover p.abstract {
   color: #444;

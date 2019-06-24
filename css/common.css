@@ -197,11 +197,17 @@
 .tab ul li:hover a {
   color: #cca755;
 }
+.tabBody {
+  background-color: #f4f7f9;
+}
 .tabBody ul li {
   display: none;
 }
 .tabBody ul li.active {
   display: block;
+}
+.tabBody ul li .tabBodyPanel {
+  padding: 40px 20px;
 }
 .footerMenus {
   height: 68px;
@@ -240,6 +246,9 @@
 }
 .footerMenus ul li:hover p {
   color: #cca755;
+}
+.footer {
+  margin-top: 20px;
 }
 .footer .container {
   padding: 15px;

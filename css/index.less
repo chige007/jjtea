@@ -31,6 +31,7 @@
                         text-align: center;
                         z-index: 2;
                         background-color: rgba(0, 0, 0, 0.5);
+                        .animation(.4s);
                         p{
                             word-break: break-all;
                             color: #fff;
@@ -51,7 +52,6 @@
                         bottom: -100%;
                         text-align: left;
                         padding: 15px;
-                        .animation(.4s);
                         p{
                             font-size: 14px;
                             line-height: 26px;
@@ -59,8 +59,12 @@
                         }
                     }
                     &:hover{
+                        .name{
+                            background-color: @theme
+                        }
                         .discripe{
                             bottom: 0%;
+                            background-color: rgba(189, 140, 71, 0.8);
                         }
                         img{
                             width: 106%;
@@ -74,6 +78,7 @@
 }
 .activityNews{
     padding: 20px 0px;
+    margin-bottom: 30px;
     .newsList{
         ul{
             .clear;
@@ -125,12 +130,13 @@
                     }
                 }
                 &:hover{
-                    background-color: #f7f9fb;
-                    .boxShadow(0px 1px 4px #ccc);
+                    background-color: lighten(@theme, 40%);
+                    border: 1px solid @theme;
+                    .boxShadow(0px 1px 4px lighten(@theme, 30%));
                     .transform(translateY(-3px));
                     p{
                         &.title{
-                            color: @theme;
+                            color: #000;
                         }
                         &.abstract{
                             color: #444;
