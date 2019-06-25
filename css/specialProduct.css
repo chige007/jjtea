@@ -390,80 +390,25 @@ textarea:-ms-input-placeholder {
 .footer .container .qrcode.mobile span {
   padding-top: 16px;
 }
-.contactInfo {
-  font-size: 16px;
-  color: #444;
-  line-height: 40px;
-  letter-spacing: 1px;
+.productList {
+  padding: 10px;
+  margin-top: 30px;
 }
-#joinUsForm {
-  width: 500px;
-  margin: 0px auto;
-  text-align: center;
+.productList .container {
+  overflow: hidden;
 }
-#joinUsForm .formGroup {
-  margin: 10px 0px;
-}
-#joinUsForm .formGroup label {
-  font-size: 15px;
-  color: #444;
-  letter-spacing: 1px;
-  line-height: 50px;
-}
-#joinUsForm .formGroup input {
-  height: 35px;
-  border: none;
-  border-bottom: 1px solid #999;
-  width: 350px;
-  font-size: 15px;
-  padding: 0px 6px;
-  background: transparent;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-}
-#joinUsForm .formGroup input:focus {
-  border-color: #cca755;
-}
-#joinUsForm button {
-  height: 45px;
-  width: 380px;
-  background-color: #cca755;
-  margin: 20px auto;
-  border: none;
-  font-size: 15px;
-  color: #fff;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-}
-#joinUsForm button:hover {
-  cursor: pointer;
-  background-color: #b78f37;
-}
-#contactUsImg {
+.productList .container .product {
   float: left;
-  height: 190px;
-  margin-right: 40px;
+  width: 28%;
+  margin: 25px 2.65%;
+  overflow: hidden;
 }
-#joinUsImg {
-  margin: 30px auto -40px auto;
+.productList .container .product a {
   display: block;
-}
-#map {
-  margin-top: 20px;
-  height: 500px;
   width: 100%;
+  padding-bottom: 33.5%;
 }
-.footerMenus {
-  margin-top: 0px;
+.productList .container .product a img {
+  height: 100%;
+  width: 100%;
 }

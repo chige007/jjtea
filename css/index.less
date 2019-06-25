@@ -60,7 +60,7 @@
                     }
                     &:hover{
                         .name{
-                            background-color: @theme
+                            background-color: rgba(189, 140, 71, 0.8);
                         }
                         .discripe{
                             bottom: 0%;
@@ -109,7 +109,7 @@
                     .animation(.3s);
                     &.title{
                         font-size: 17px;
-                        color: #222;
+                        color: @black;
                     }
                     &.abstract{
                         font-size: 13px;
@@ -130,9 +130,9 @@
                     }
                 }
                 &:hover{
-                    background-color: lighten(@theme, 40%);
-                    border: 1px solid @theme;
-                    .boxShadow(0px 1px 4px lighten(@theme, 30%));
+                    background-color: #f9fafb;
+                    border: 1px solid @black;
+                    .boxShadow(0px 1px 3px lighten(@black, 70%));
                     .transform(translateY(-3px));
                     p{
                         &.title{
@@ -177,7 +177,7 @@
     .text{
         p{
             font-size: 24px;
-            color: #222;
+            color: @black;
             &.en{
                 font-size: 12px;
                 margin-top: 3px;
