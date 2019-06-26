@@ -6,3 +6,80 @@
     margin-top: 50px;
 }
 
+.activityNewsList{
+    margin-bottom: 50px;
+    .container{
+        .activityNews{
+            height: 170px;
+            margin: 25px 0px;
+            padding: 10px;
+            padding-left: 210px;
+            padding-right: 170px;
+            border: 1px solid #ddd;
+            display: block;
+            .animation();
+            img{
+                position: absolute;
+                height: 150px;
+                width: 180px;
+                top: 10px;
+                left: 10px;
+                margin: auto;
+            }
+            p{
+                &.title{
+                    font-size: 18px;
+                    color: @black;
+                    letter-spacing: 1px;
+                    margin: 10px 0px;
+                }
+                &.detail{
+                    color: #999;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-top: 15px;
+                    line-height: 24px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    text-indent: 2em;
+                }
+            }
+            .date{
+                position: absolute;
+                right: 10px;
+                top: 20px;
+                bottom: 20px;
+                width: 130px;
+                border-left: 1px solid #ddd;
+                font-size: 20px;
+                color: #999;
+                padding: 40px 10px;
+                text-align: center;
+                span{
+                    font-size: 14px;
+
+                }
+            }
+            &:hover{
+                cursor: pointer;
+                border-color: @black;
+                .boxShadow(0px 0px 5px #999)!important;
+                .transform(translateY(-4px));
+                p{
+                    &.title{
+                        color: #000;
+                    }
+                    &.detail{
+                        color: #666;
+                    }
+                }
+                .date{
+                    color: #666;
+                }
+            }
+        }
+    }
+}
