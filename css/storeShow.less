@@ -1,4 +1,5 @@
 @import './util.less';
+@import './animation.less';
 @import './init.less';
 @import './common.less';
 
@@ -13,6 +14,9 @@
             width: 30%;
             float: left;
             margin: 1.65%;
+            border: 1px solid #ddd;
+            padding: 5px;
+            .animation();
             .wrap{
                 width: 100%;
                 padding-bottom: 75%;
@@ -34,6 +38,8 @@
             }
             &:hover{
                 cursor: pointer;
+                border: 1px solid #bbb;
+                .boxShadow(0px 0px 4px #bbb);
                 .wrap{
                     img{
                         width: 110%;
@@ -42,5 +48,43 @@
                 }
             }
         }
+    }
+}
+
+#bigImageWrap{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    z-index: 999;
+    display: none;
+    .wrap{
+        display: inline-block;
+        margin: 30px auto;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid @black;
+        max-width: 100%;
+        .boxShadow(0px 0px 10px lighten(@black, 40%));
+        .closeBtn{
+            position: absolute;
+            right: -15px;
+            top: -15px;
+            z-index: 1;
+            cursor: pointer;
+            &:hover{
+                .moves(roll-animation,2s,ease-out,infinite,0s);
+            }
+        }
+        .image{
+            display: block;
+        }
+    }
+    &.show{
+        display: block;
     }
 }

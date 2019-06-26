@@ -29,8 +29,7 @@ span,
 input,
 button,
 textarea,
-i,
-div {
+i {
   text-decoration: none;
   outline: none;
 }
@@ -40,28 +39,24 @@ input:hover,
 button:hover,
 textarea:hover,
 i:hover,
-div:hover,
 a:active,
 span:active,
 input:active,
 button:active,
 textarea:active,
 i:active,
-div:active,
 a:focus,
 span:focus,
 input:focus,
 button:focus,
 textarea:focus,
 i:focus,
-div:focus,
 a:focus:active,
 span:focus:active,
 input:focus:active,
 button:focus:active,
 textarea:focus:active,
-i:focus:active,
-div:focus:active {
+i:focus:active {
   text-decoration: none!important;
   outline: none!important;
   box-shadow: none!important;
@@ -141,7 +136,7 @@ textarea:-ms-input-placeholder {
 }
 .header .container .topMenus ul li p {
   font-size: 18px;
-  color: #222;
+  color: #232323;
   white-space: nowrap;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -179,6 +174,62 @@ textarea:-ms-input-placeholder {
   -moz-transform: scale(0.9) translateY(-3px);
   -webkit-transform: scale(0.9) translateY(-3px);
   -o-transform: scale(0.9) translateY(-3px);
+}
+.blockTitle {
+  text-align: center;
+  margin: 10px 0px 40px 0px;
+}
+.blockTitle .text p {
+  font-size: 24px;
+  color: #232323;
+}
+.blockTitle .text p.en {
+  font-size: 12px;
+  margin-top: 3px;
+  transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  color: #cca755;
+}
+.blockTitle .line {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 2px;
+  width: 270px;
+  margin: auto;
+  background-color: #444;
+}
+.blockTitle .line:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: -3px;
+  bottom: 0px;
+  margin: 0px;
+  background-color: #444;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.blockTitle .line.left {
+  left: -420px;
+}
+.blockTitle .line.left:after {
+  right: 0px;
+}
+.blockTitle .line.right {
+  right: -420px;
+}
+.blockTitle .line.right:after {
+  left: 0px;
 }
 .banner {
   min-width: 1024px;
@@ -269,7 +320,7 @@ textarea:-ms-input-placeholder {
 .tab ul li a {
   display: inline-block;
   padding: 15px 40px;
-  color: #222;
+  color: #232323;
   font-size: 16px;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -389,4 +440,10 @@ textarea:-ms-input-placeholder {
 }
 .footer .container .qrcode.mobile span {
   padding-top: 16px;
+}
+.storyImgList .container {
+  text-align: center;
+}
+.storyImgList .container img {
+  max-width: 100%;
 }
