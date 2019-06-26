@@ -20,8 +20,9 @@
                 img{
                     position: absolute;
                     width: 100%;
-                    top: 0px;
-                    left: 0px;
+                    top: 0%;
+                    left: 0%;
+                    .animation();
                 }
             }
             .name{
@@ -30,6 +31,15 @@
                 font-size: 15px;
                 text-align: center;
                 letter-spacing: 1px;
+            }
+            &:hover{
+                cursor: pointer;
+                .wrap{
+                    img{
+                        width: 110%;
+                        left: -5%;
+                    }
+                }
             }
         }
     }
