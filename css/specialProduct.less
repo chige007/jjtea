@@ -2,9 +2,13 @@
 @import './init.less';
 @import './common.less';
 
+.blockTitle{
+    margin-top: 50px;
+}
 .productList{
     padding: 10px;
     margin-top: 30px;
+    margin-bottom: 50px;
     .container{
         overflow: hidden;
         .product{
@@ -12,20 +16,71 @@
             width: 28%;
             margin: 25px 2.65%;
             overflow: hidden;
+            border: 1px solid #e3e7e9;
+            padding: 8px 8px 10px 8px;
+            .animation();
             a{
                 display: block;
                 width: 100%;
-                padding-bottom: 33.5%;
-                img{
-                    height: 100%;
+                .wrap{
                     width: 100%;
+                    padding-bottom: 120%;
+                    overflow: hidden;
+                    img{
+                        position: absolute;
+                        left: 0%;
+                        top: 0%;
+                        right: 0%;
+                        margin: auto;
+                        width: 100%;
+                        .animation();
+                    }
                 }
                 p{
+                    padding: 0px 4px;
                     &.price{
-                        
+                        display: inline-block;
+                        background-color: @black;
+                        padding: 2px 10px;
+                        color: #fff;
+                        margin: 8px 0px 8px 0px;
+                        font-size: 13px;
+                        .radius(100px);
+                        span{
+                            font-size: 16px;
+                        }
                     }
                     &.name{
-    
+                        font-size: 15px;
+                        color: #444;
+                        letter-spacing: 1px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                    &.detail{
+                        color: #999;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                        margin-top: 5px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+            }
+            &:hover{
+                cursor: pointer;
+                border: 1px solid @black;
+                background-color: #fdfdfd;
+                .boxShadow(0px 2px 6px #bbb);
+                .transform(translateY(-4px));
+                a{
+                    .wrap{
+                        img{
+                            width: 105%;
+                            left: -2.5%;
+                        }
                     }
                 }
             }

@@ -1,0 +1,36 @@
+@import './util.less';
+@import './init.less';
+@import './common.less';
+
+.blockTitle{
+    margin-top: 50px;
+}
+.storePicList{
+    margin-bottom: 50px;
+    .container{
+        overflow: hidden;
+        .storePic{
+            width: 30%;
+            float: left;
+            margin: 1.65%;
+            .wrap{
+                width: 100%;
+                padding-bottom: 75%;
+                overflow: hidden;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+            .name{
+                margin: 10px 0px;
+                color: #666;
+                font-size: 15px;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

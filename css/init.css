@@ -29,8 +29,7 @@ span,
 input,
 button,
 textarea,
-i,
-div {
+i {
   text-decoration: none;
   outline: none;
 }
@@ -40,28 +39,24 @@ input:hover,
 button:hover,
 textarea:hover,
 i:hover,
-div:hover,
 a:active,
 span:active,
 input:active,
 button:active,
 textarea:active,
 i:active,
-div:active,
 a:focus,
 span:focus,
 input:focus,
 button:focus,
 textarea:focus,
 i:focus,
-div:focus,
 a:focus:active,
 span:focus:active,
 input:focus:active,
 button:focus:active,
 textarea:focus:active,
-i:focus:active,
-div:focus:active {
+i:focus:active {
   text-decoration: none!important;
   outline: none!important;
   box-shadow: none!important;

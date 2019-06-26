@@ -29,7 +29,8 @@ span,
 input,
 button,
 textarea,
-i {
+i,
+div {
   text-decoration: none;
   outline: none;
 }
@@ -39,24 +40,28 @@ input:hover,
 button:hover,
 textarea:hover,
 i:hover,
+div:hover,
 a:active,
 span:active,
 input:active,
 button:active,
 textarea:active,
 i:active,
+div:active,
 a:focus,
 span:focus,
 input:focus,
 button:focus,
 textarea:focus,
 i:focus,
+div:focus,
 a:focus:active,
 span:focus:active,
 input:focus:active,
 button:focus:active,
 textarea:focus:active,
-i:focus:active {
+i:focus:active,
+div:focus:active {
   text-decoration: none!important;
   outline: none!important;
   box-shadow: none!important;
@@ -444,101 +449,32 @@ textarea:-ms-input-placeholder {
 .blockTitle {
   margin-top: 50px;
 }
-.productList {
-  padding: 10px;
-  margin-top: 30px;
+.storePicList {
   margin-bottom: 50px;
 }
-.productList .container {
+.storePicList .container {
   overflow: hidden;
 }
-.productList .container .product {
+.storePicList .container .storePic {
+  width: 30%;
   float: left;
-  width: 28%;
-  margin: 25px 2.65%;
-  overflow: hidden;
-  border: 1px solid #e3e7e9;
-  padding: 8px 8px 10px 8px;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
+  margin: 1.65%;
 }
-.productList .container .product a {
-  display: block;
+.storePicList .container .storePic .wrap {
   width: 100%;
-}
-.productList .container .product a .wrap {
-  width: 100%;
-  padding-bottom: 120%;
+  padding-bottom: 75%;
   overflow: hidden;
 }
-.productList .container .product a .wrap img {
+.storePicList .container .storePic .wrap img {
   position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  margin: auto;
   width: 100%;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
+  top: 0px;
+  left: 0px;
 }
-.productList .container .product a p {
-  padding: 0px 4px;
-}
-.productList .container .product a p.price {
-  display: inline-block;
-  background-color: #232323;
-  padding: 2px 10px;
-  color: #fff;
-  margin: 8px 0px 8px 0px;
-  font-size: 13px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-}
-.productList .container .product a p.price span {
-  font-size: 16px;
-}
-.productList .container .product a p.name {
+.storePicList .container .storePic .name {
+  margin: 10px 0px;
+  color: #666;
   font-size: 15px;
-  color: #444;
+  text-align: center;
   letter-spacing: 1px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.productList .container .product a p.detail {
-  color: #999;
-  font-size: 13px;
-  letter-spacing: 1px;
-  margin-top: 5px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.productList .container .product:hover {
-  cursor: pointer;
-  border: 1px solid #232323;
-  background-color: #fdfdfd;
-  box-shadow: 0px 2px 6px #bbb;
-  -webkit-box-shadow: 0px 2px 6px #bbb;
-  -moz-box-shadow: 0px 2px 6px #bbb;
-  -ms-box-shadow: 0px 2px 6px #bbb;
-  -o-box-shadow: 0px 2px 6px #bbb;
-  transform: translateY(-4px);
-  -ms-transform: translateY(-4px);
-  -moz-transform: translateY(-4px);
-  -webkit-transform: translateY(-4px);
-  -o-transform: translateY(-4px);
-}
-.productList .container .product:hover a .wrap img {
-  width: 105%;
-  left: -2.5%;
 }
