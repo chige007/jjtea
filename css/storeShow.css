@@ -816,6 +816,7 @@ textarea:-ms-input-placeholder {
 }
 #bigImageWrap .wrap .image {
   display: block;
+  max-width: 100%;
 }
 #bigImageWrap.show {
   display: block;
