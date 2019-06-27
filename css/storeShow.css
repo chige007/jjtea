@@ -275,6 +275,7 @@ span,
 img {
   margin: 0px;
   padding: 0px;
+  border: none;
 }
 html,
 body {
@@ -353,6 +354,9 @@ textarea:-ms-input-placeholder {
   max-width: 1400px;
   min-width: 1024px;
   margin: 0px auto;
+}
+.header {
+  background-color: #fff;
 }
 .header .container {
   height: 215px;
@@ -654,7 +658,8 @@ textarea:-ms-input-placeholder {
   color: #cca755;
 }
 .footer {
-  margin-top: 20px;
+  background-color: #fff;
+  padding-top: 20px;
 }
 .footer .container {
   padding: 15px;
