@@ -3,6 +3,9 @@
   position: relative;
   font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif;
 }
+img {
+  border: none;
+}
 html,
 body,
 ul,
