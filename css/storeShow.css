@@ -278,6 +278,7 @@ span,
 img {
   margin: 0px;
   padding: 0px;
+  border: none;
 }
 html,
 body {
@@ -818,6 +819,7 @@ textarea:-ms-input-placeholder {
 }
 #bigImageWrap .wrap .image {
   display: block;
+  max-width: 100%;
 }
 #bigImageWrap.show {
   display: block;
